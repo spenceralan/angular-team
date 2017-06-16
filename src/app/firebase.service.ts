@@ -16,4 +16,8 @@ export class FirebaseService {
   saveMember(newMember) {
     this.members.push(newMember);
   }
+
+  getMemberByID(id) {
+    return this.database.object(`members/${id}`);
+  }
 }

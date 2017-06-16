@@ -19,6 +19,8 @@ export class MemberListComponent implements OnInit {
     this.members = this.firebaseService.getMembers();
   }
 
-
+  memberPage(member) {
+    this.router.navigate(['member', member.$key])
+  }
 
 }
