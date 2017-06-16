@@ -7,8 +7,9 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { CreateMemberComponent } from './create-member/create-member.component';
-import { UpdateMemberComponent } from './update-member/update-member.component';
+import { MemberCreateComponent } from './member-create/member-create.component';
+import { MemberUpdateComponent } from './member-update/member-update.component';
+import { MemberDetailComponent } from './member-detail/member-detail.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -21,8 +22,9 @@ export const firebaseConfig = {
   declarations: [
     AppComponent,
     HomeComponent,
-    CreateMemberComponent,
-    UpdateMemberComponent
+    MemberCreateComponent,
+    MemberUpdateComponent,
+    MemberDetailComponent,
   ],
   imports: [
     BrowserModule,
