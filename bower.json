@@ -1,0 +1,20 @@
+{
+  "name": "swim-team",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Spencer Alan <spencer.alan@icloud.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
