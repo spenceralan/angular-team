@@ -1,3 +1,25 @@
-<p>
-  member-create works!
-</p>
+<a routerLink="" class="btn btn-default">Home</a>
+<hr>
+<form id="new-member" #form="ngForm" (ngSubmit)="newMember(form.value)">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input class="form-control" placeholder="Sally Johnson" name="name" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input class="form-control" type="number" placeholder="14" name="age" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="specialty">Stroke Specialty</label>
+    <select class="form-control" name="specialty" ngModel>
+      <option selected disabled>Select Specialty</option>
+      <option value="Freestyle">Freestyle</option>
+      <option value="Butterfly">Butterfly</option>
+      <option value="Breaststroke">Breaststroke</option>
+      <option value="Backstroke">Backstroke</option>
+      <option value="Individual Medely">Individual Medely</option>
+      <option value="Long Distance">Long Distance</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
