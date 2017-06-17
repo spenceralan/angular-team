@@ -1,12 +1,22 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import { Member } from './member.model';
 
 @Pipe({
-  name: 'specialty'
+  name: 'specialtyPipe'
 })
+
 export class SpecialtyPipe implements PipeTransform {
 
-  transform(value: any, args?: any): any {
-    return null;
+  transform(members: Member[], specialty: string): any {
+    if (members) {
+      if (specialty === 'All') {
+        return members;
+      } else {
+        return members.filter(function(member) {
+          return member.specialty === specialty;
+        });
+      }
+    }
   }
 
 }

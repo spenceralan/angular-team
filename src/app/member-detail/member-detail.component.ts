@@ -3,6 +3,7 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { FirebaseService } from '../firebase.service';
 import { Member } from '../member.model';
 
+
 @Component({
   selector: 'app-member-detail',
   templateUrl: './member-detail.component.html',

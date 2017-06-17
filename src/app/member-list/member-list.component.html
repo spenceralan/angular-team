@@ -1,3 +1,17 @@
-<div class="member" *ngFor="let member of members | async">
+<div class="form-group">
+  <label for="specialty">Filter Members by Specialty</label>
+  <select class="form-control" name="specialty" [(ngModel)]="specialtyFilter">
+    <option selected disabled>Select Specialty</option>
+    <option value="All">All</option>
+    <option value="Freestyle">Freestyle</option>
+    <option value="Butterfly">Butterfly</option>
+    <option value="Breaststroke">Breaststroke</option>
+    <option value="Backstroke">Backstroke</option>
+    <option value="Individual Medely">Individual Medely</option>
+    <option value="Long Distance">Long Distance</option>
+  </select>
+</div>
+
+<div class="member" *ngFor="let member of members | async | specialtyPipe:specialtyFilter">
   <h3 (click)="memberPage(member)">{{member.name}}</h3>
 </div>
