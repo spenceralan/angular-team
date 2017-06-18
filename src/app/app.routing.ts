@@ -2,9 +2,10 @@ import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component'
-import { MemberCreateComponent } from './member-create/member-create.component'
-import { MemberDetailComponent } from './member-detail/member-detail.component'
+import { AboutComponent } from './about/about.component';
+import { AdminComponent } from './admin/admin.component';
+import { MemberCreateComponent } from './member-create/member-create.component';
+import { MemberDetailComponent } from './member-detail/member-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -22,6 +23,10 @@ const appRoutes: Routes = [
   {
     path: 'member/:id',
     component: MemberDetailComponent,
+  },
+  {
+    path: 'admin',
+    component: AdminComponent,
   },
 ];
 
