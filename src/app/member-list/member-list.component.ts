@@ -26,7 +26,11 @@ export class MemberListComponent implements OnInit {
   }
 
   memberPage(member) {
-    this.router.navigate(['member', member.$key])
+    if (this.router.url.match(/admin/)) {
+      this.router.navigate(['admin/member', member.$key]);
+    } else {
+      this.router.navigate(['member', member.$key]);
+    }
   }
 
 }

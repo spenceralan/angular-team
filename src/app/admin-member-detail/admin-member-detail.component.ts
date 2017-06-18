@@ -3,14 +3,13 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { FirebaseService } from '../firebase.service';
 import { Member } from '../member.model';
 
-
 @Component({
-  selector: 'app-member-detail',
-  templateUrl: './member-detail.component.html',
-  styleUrls: ['./member-detail.component.css'],
+  selector: 'app-admin-member-detail',
+  templateUrl: './admin-member-detail.component.html',
+  styleUrls: ['./admin-member-detail.component.css'],
   providers: [FirebaseService],
 })
-export class MemberDetailComponent implements OnInit {
+export class AdminMemberDetailComponent implements OnInit {
   memberID;
   member;
 
@@ -23,7 +22,10 @@ export class MemberDetailComponent implements OnInit {
   ngOnInit() {
     this.memberID = this.route.params['_value']['id'];
     this.firebaseService.getMemberByID(this.memberID).subscribe(data => { this.member = data });
-    console.log(this.router.url);
   }
 
+  delete(member) {
+    this.firebaseService.deleteMember(member);
+    this.router.navigate(['admin']);
+  }
 }

@@ -1,0 +1,12 @@
+<a routerLink="" class="btn btn-default">Home</a>
+
+<hr>
+
+<div *ngIf="member">
+  <h1>{{member.name}}</h1>
+  <h3>{{member.age}}</h3>
+  <h3>{{member.specialty}}</h3>
+</div>
+
+<a class="btn btn-default">Edit</a>
+<a (click)="delete(member)" class="btn btn-danger">Delete</a>
