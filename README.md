@@ -1,4 +1,4 @@
-# Animal Sanctuary
+# Swim Team
 This project will save the world!
 
 Have you ever found yourself running a swim team and not had the correct tools to properly manage your team roster?! Fear not! This tool gives you everything you need to help you keep track of little Timmy's age and what Sally's favorite swimming stroke is. There is even a discrete area for admins to create, update, and delete swimmers from the team!
