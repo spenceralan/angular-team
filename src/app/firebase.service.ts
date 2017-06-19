@@ -22,6 +22,15 @@ export class FirebaseService {
     dbMember.remove();
   }
 
+  updateMember(member) {
+    let dbMember = this.getMemberByID(member.$key);
+    dbMember.update({
+      name: member.name,
+      age: member.age,
+      specialty: member.specialty,
+    });
+  }
+
   getMemberByID(id) {
     return this.database.object(`members/${id}`);
   }

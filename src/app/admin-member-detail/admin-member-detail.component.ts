@@ -28,4 +28,8 @@ export class AdminMemberDetailComponent implements OnInit {
     this.firebaseService.deleteMember(member);
     this.router.navigate(['admin']);
   }
+
+  update(member) {
+    this.router.navigate(['admin/edit-member', member.$key]);
+  }
 }
