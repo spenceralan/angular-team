@@ -68,11 +68,6 @@ The required packages may take a few minutes to download and install due to the 
 * Node
 * Bower
 
-## What I Learned
-This week was a whirlwind! A whole new framework but I am getting much more comfortable with the MVC model! I learned that Angular has some great built-in features like *ngIf and [(ngModel)] making responsive web design and updaing objects on the fly much easier.
-
-Future iterations of this app would include an asynchronous database, more robust sorting features, stricter limitations on input, and much much better styling.
-
 ## Authors
 * Spencer Alan
 
