@@ -10,6 +10,11 @@ Examples: Chrome, Safari
 * bower
 
 ### Installing
+
+If you dont want to install to your local machine, you don't have to! I have deployed the app live at:
+
+https://swim-team-6a663.firebaseapp.com/
+
 These instructions have been verified to work on MacOS.
 There are a few terminal commands you will need to run to get the app to launch locally on your machine. First though, you will need to clone this repository to your machine and navigate to its folder in your terminal. You will also have to add a file and obtain a firebase API key.
 
