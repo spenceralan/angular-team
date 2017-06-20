@@ -20,7 +20,7 @@ const appRoutes: Routes = [
     component: AboutComponent,
   },
   {
-    path: 'new-member',
+    path: 'admin/new-member',
     component: MemberCreateComponent,
   },
   {
