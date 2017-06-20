@@ -19,7 +19,7 @@ export class MemberCreateComponent implements OnInit {
   newMember(values) {
     let member = new Member(values);
     this.firebaseService.saveMember(member);
-    this.router.navigate(['']);
+    this.router.navigate(['admin']);
   }
 
 }
